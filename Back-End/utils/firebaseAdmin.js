@@ -8,3 +8,4 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: process.env.AUTH_DATABASE_URL
 });
+module.exports = admin;
