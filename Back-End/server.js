@@ -41,5 +41,10 @@ app.use("/api", require("./routes/asistenciaRoutes"));
 app.use("/api", require("./routes/materialRoutes"));
 app.use("/api", require("./routes/reporteRoutes"));
 app.use("/api", require("./routes/chatbotRoutes"));
+app.get('/wake', (req, res) => {
+  console.log('Wake-up signal received');
+  res.sendStatus(200);
+});
+
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
